@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo - Studio Vitor Augusto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    h1 {
+      background: #000000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    figure {
+      width: 220px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      margin: 0;
+      transition: transform 0.2s ease;
+    }
+
+    figure:hover {
+      transform: translateY(-5px);
+    }
+
+    figure img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    figcaption {
+      padding: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+   
+
+
+  <h1>Studio Vitor Augusto - Catálogo</h1>
+
+
+
+
+
+
+
+  <!-- Barra de pesquisa -->
+<input type="text" id="barraPesquisa" placeholder="Pesquisar produtos..." onkeyup="pesquisarProduto()">
+
+<script>
+function pesquisarProduto() {
+  let input = document.getElementById("barraPesquisa");
+  let filtro = input.value.toLowerCase();
+  let figuras = document.querySelectorAll(".galeria figure");
+
+  figuras.forEach(figura => {
+    let texto = figura.querySelector("figcaption").textContent.toLowerCase();
+    if (texto.indexOf(filtro) > -1) {
+      figura.style.display = "";
+    } else {
+      figura.style.display = "none";
+    }
+  });
+}
+</script>
+
+
+  <div class="galeria">
+    <figure>
+      <a href="./adesivo.png" target="adesivo">
+        <img src="./adesivo.png" alt="adesivo">
+      </a>
+      <figcaption>adesivo personalizado</figcaption>
+    </figure>
+
+    <figure>
+      <a href="./capa para intro do you tube.jpg" target="capa">
+        <img src="./capa para intro do you tube.jpg" alt="capa">
+      </a>
+      <figcaption>capa para youtube</figcaption>
+    </figure>
+
+    <figure>
+      <a href="./uniforme.png" target="uniforme">
+        <img src="./uniforme.png" alt="uniforme">
+      </a>
+      <figcaption>uniforme para time de futebol</figcaption>
+    </figure>
+
+    <figure>
+      <a href="./cardapio.jpg" target="cardapio">
+        <img src="./cardapio.jpg" alt="cardapio">
+      </a>
+      <figcaption>cardapio personalizado</figcaption>
+    </figure>
+
+    <figure>
+      <a href="./cartão de visita.jpg" target="cartão">
+        <img src="./cartão de visita.jpg" alt="cartão">
+      </a>
+      <figcaption>cartão de visita personalizado</figcaption>
+    </figure>
+
+    <figure>
+       <a href="./convite de festa infantil.jpg" target="convite">
+            <img src="./convite de festa infantil.jpg" alt="convite">
+       </a>
+       <figcaption>convite para festa infantil</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./CONVITE FORMARTURA.jpg" target="formatura">
+           <img src="./CONVITE FORMARTURA.jpg" alt="formatura">
+        </a>
+        <figcaption>convite para formatura</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./panfleto publicitario.jpg" target="panfleto">
+           <img src="./panfleto publicitario.jpg" alt="panfleto">
+        </a>
+        <figcaption>panfleto publicitario</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./capa para facebook.jpg" target="capa">
+            <img src="./capa para facebook.jpg" alt="capa">
+        </a>
+        <figcaption>capa para facebook</figcaption>
+    </figure>
+    
+    <figure>
+        <a href="./banner.jpg" target="banner">
+               <img src="./banner.jpg" alt="banner">
+        </a>
+        <figcaption>banner personalizado</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./post para instagram.jpg" target="post">
+          <img src="./post para instagram.jpg" alt="post">
+        </a>
+        <figcaption>post para rededes sociais</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./convite casamento.jpg" target="convite">
+              <img src="./convite casamento.jpg" alt="convite">
+        </a>
+        <figcaption>convite para casamento personalizado</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./molettom.png" target="moleton ">
+         <img src="./molettom.png" alt="moleton">
+        </a>
+        <figcaption>Jaqueta</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./camiseta.png" target="camiseta">
+           <img src="./camiseta.png" alt="camiseta">
+        </a>
+        <figcaption>camiseta dri fit</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./wind banner.png" target="wind">
+             <img src="./wind banner.png" alt="wind">
+        </a>
+        <figcaption>wind banner personalizado</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./camiseta regata.png" target="camiseta">
+            <img src="./camiseta regata.png" alt="camiseta">
+        </a>
+        <figcaption>camiseta regata</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./adesivo de porta.webp" target="adesivo">
+          <img src="./adesivo de porta.webp" alt="adesivo">
+        </a>
+        <figcaption>adesivo de porta personalizado</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./adesivo em folha.png" target="adesivo">
+             <img src="./adesivo em folha.png" alt="adesivo">
+        </a>
+        <figcaption>adesivo em folha</figcaption>
+    </figure>
+    
+    <figure>
+        <a href="./adesivo holografico.png" target="adesivo">
+           <img src="./adesivo holografico.png" alt="adesivo">
+        </a>
+        <figcaption>adesivo holográfico</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./adesivo vinil.png" target="adesivo">
+            <img src="./adesivo vinil.png" alt="adesivo">
+        </a>
+        <figcaption>adesivo de vinil </figcaption>
+    </figure>
+
+    <figure>
+        <a href="./sacola plastica.png" target="sacola">
+               <img src="./sacola plastica.png" alt="sacola">
+        </a>
+        <figcaption>sacola plastica</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./sacola em papel personalizado.png" target="sacola">
+            <img src="./sacola em papel personalizado.png" alt="sacola">
+        </a>
+        <figcaption>sacola em papel personalizada</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./uniforme para futebol.png" target="uniforme">
+            <img src="./uniforme para futebol.png" alt="uniforme">
+        </a>
+        <figcaption>uniforme para futebol</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./uniforme para futebol 2.png" target="uniforme">
+            <img src="./uniforme para futebol 2.png" alt="uniforme">
+        </a>
+        <figcaption>uniforme para futebol</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./uniforme para futebol 3.png" target="uniforme">
+            <img src="./uniforme para futebol 3.png" alt="uniforme">
+        </a>
+        <figcaption>uniforme para futebol</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./uniforme para futebol 4.png" target="uniforme">
+             <img src="./uniforme para futebol 4.png" alt="uniforme">
+        </a>
+        <figcaption>uniforme para futebol</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./uniforme para futebol 5.png" tabindex="uniforme">
+            <img src="./uniforme para futebol 5.png" alt="uniforme">
+        </a>
+        <figcaption>uniforme para time de futebol</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./uniforme para futebol 6.png" target="uniforme">
+                  <img src="./uniforme para futebol 6.png" alt="uniforme">
+        </a>
+        <figcaption>uniforme para time de futebol</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./calendario.webp" target="calendario">
+               <img src="./calendario.webp" alt="calendario">
+        </a>
+        <figcaption>calendario personalizado</figcaption>
+    </figure>
+    <figure>
+        <a href="./caneca de shopp peesonalizada.png" target="caneca">
+        <img src="./caneca de shopp peesonalizada.png" alt="caneca">
+        </a>
+        <figcaption>caneca de shopp personalizada</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./caneca personalizada.png" target="caneca">
+            <img src="./caneca personalizada.png" alt="caneca">
+        </a>
+        <figcaption>caneca simples personalizada</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./uniforme para futebol 7.png" target="uniforme">
+          <img src="./uniforme para futebol 7.png" alt="uniforme">
+        </a>
+        <figcaption>unforme para time de futebol</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./adesivo troca de oleo.webp" target="adesivo troca de oleo">
+            <img src="./adesivo troca de oleo.webp" alt="adesivo troca de oleo">
+        </a>
+        <figcaption>adesivo para troca de óleo</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./adesivo para vitrine.png" target="adesivo para vitrine">
+            <img src="./adesivo para vitrine.png" alt="adesivo para vitrine">
+        </a>
+        <figcaption>adesivo para vitrine</figcaption>
+    </figure>
+
+    <figure>
+        <a href="./adesivo perfurado para vidro.png" target="adesivo">
+              <img src="./adesivo perfurado para vidro.png" alt="adesivo">
+        </a>
+        <figcaption>adesivo perfurado para vidro</figcaption>
+    </figure>
+
+    <figure>
+      <a href="./copo 700 ml personalizado.png" target="copo">
+                 <img src="./copo 700 ml personalizado.png" alt="copo">
+      </a>
+      <figure>copo descartavel personalizado</figure>
+    </figure>
+
+    <figure>
+      <a href="./logotipo.jpeg" target="logotipo">
+   <img src="./logotipo.jpeg" alt="logotipo">
+      </a>
+      <figcaption>logotipo</figcaption>
+    </figure>
+    <figure>
+      <a href="./garrafa prata bolinha 500 ml.png" target="garrafa">
+              <img src="./garrafa prata bolinha 500 ml.png" alt="garrafa">
+      </a>
+      <figcaption>garrafa prata bolinha 500ml</figcaption>
+    </figure>
+
+    <figure>
+      <a href="./carimbom.webp" target="carimbo">
+        <img src="./carimbom.webp" alt="carimbo">
+      </a>
+      <figcaption>carimbo automatico</figcaption>
+    </figure>
+
+    <figure>
+      <a href="./folder 1 dobra.png" target="folder">
+        <img src="./folder 1 dobra.png" alt="folder">
+      </a>
+      <figcaption>folder de 1 dobra</figcaption>
+    </figure>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<footer style="text-align: center; padding: 20px; background: #0ea5e9; color: white;">
+  <p>
+    📞 Contato: 
+    <a href="tel:+17997746829" style="color: white; text-decoration: none;">
+      (17) 99774-6829
+    </a>
+  </p>
+  <p>
+    📸 Instagram: 
+    <a href="https://www.instagram.com/studiovitinaugusto22?igsh=MTBtaXMwZjJ6ZG90ZQ==" target="_blank" style="color: white; text-decoration: none;">
+      @studiovitoraugusto
+    </a>
+  </p>
+</footer>
+ugusto
+
+
+
+
+
+
