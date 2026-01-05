@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo com Figure</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 { text-align: center; }
+    .searchbar {
+      max-width: 400px;
+      margin: 0 auto 20px;
+      display: flex;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 6px;
+      background: #fff;
+    }
+    .searchbar input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    figure {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    figure img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    figcaption {
+      padding: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+    figcaption strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .empty {
+      text-align: center;
+      color: #777;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Catálogo de Produtos</h1>
+  <div class="searchbar">
+    <input id="searchInput" type="search" placeholder="Buscar produto..." />
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  <div class="grid" id="grid">
+    <figure data-name="bola de volei">
+      <img src="./bola de volei.jpg" alt="bola de volei">
+      <figcaption>
+        <strong>bola de volei</strong>
+   
+      </figcaption>
+    </figure>
+
+    <figure data-name="bola de basquete">
+      <img src="./bola de basquete.jpg" alt="bola de basquete">
+      <figcaption>
+        <strong>bola de basquete</strong>
+       
+      </figcaption>
+    </figure>
+
+    <figure data-name="bola de futebol">
+      <img src="./bola infantil 4.jpg" alt="bola">
+      <figcaption>
+        <strong>bola de futebol</strong>
+        
+      </figcaption>
+    </figure>
+
+    <figure data-name="adesivo">
+      <img src="./adesivo.png" alt="adesivo">
+      <figcaption>
+        <strong>adesivo</strong>
+      
+      </figcaption>
+    </figure>
+    
+
+    <figure data-name="benner">
+      <img src="./banner.jpg" alt="benner">
+      <figcaption>
+        <strong>banner</strong>
+      
+      </figcaption>
+    </figure>
+    
+
+    <figure data-name="boneca">
+       <img src="./boneca 2.jpg" alt="boneca">
+       <figcaption>
+        <strong>boneca</strong>
+       </figcaption>
+    </figure>
+
+
+    <figure data-name="caixa de som">
+       <img src="./caixa de som 3.jpg" alt="caixa de som">
+       <figcaption>
+        <strong>caixa de som</strong>
+       </figcaption>
+    </figure>
+
+
+    <figure data-name="capa para facebook">
+           <img src="./capa para facebook.jpg" alt="capa">
+           <figcaption>
+            <strong>capa para facebook</strong>
+           </figcaption>
+    </figure>
+
+    <figure data-name="copo infantil">
+        <img src="./copos infantil.jpg" alt="copo infantil">
+        <figcaption>
+            <strong>copo infantil</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="camiseta polo feminina">
+        <img src="./camiseta feminina polo.webp" alt="camiseta">
+        <figcaption>
+            <strong>camiseta polo  feminina</strong>
+        </figcaption>
+    </figure>
+
+
+    <figure data-name="frigideira">
+        <img src="./frigideira.jpg" alt="frigideira">
+        <figcaption>
+            <strong>frigideira</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="copo com cuia">
+        <img src="./copo com cuia 5.png" alt="copo com cuia">
+        <figcaption>
+            <strong>copo com cuia</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="convite infantil">
+        <img src="./convite de festa infantil.jpg" alt="convite infantil ">
+        <figcaption>
+            <strong>convite para festa infantil</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="cartão de visita">
+        <img src="./cartão de visita.jpg" alt="cartão de visita">
+        <figcaption>
+            <strong>cartão de visita</strong>
+        </figcaption>
+    </figure>
+
+
+    <figure data-name="copo termico">
+        <img src="./copo termico 4.png" alt="copo termico">
+        <figcaption>
+            <strong>Copo Térmico Personalizado</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="skate">
+        <img src="./skate de dedo 2.jpg" alt="skate">
+        <figcaption>
+            <strong>Skate De Dedo Brinquedo Com Lixa E Trucks Metal 9 cm x 2,5 cm Com Acessórios Design Sortido Ótimo Para Lembrancinha E Vem Ferramentas Para Troca Rodinhas Premium </strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="logotipo">
+        <img src="./logotipo.jpeg" alt="logotipo">
+        <figcaption>
+            <strong>logotipo personalizado</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="wind banner">
+        <img src="./wind banner.png" alt="wind banner">
+        <figcaption>
+            <strong>wind banner</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="pratos razos">
+        <img src="./pratos razos.jpg" alt="pratos razos">
+        <figcaption>
+            <strong>Jogo de Pratos Raso Nadir Duralex Linha Pétala 6 Peças</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="fone de ouvido ">
+        <img src="./fone de ouvido.jpg" alt="fone de ouvido">
+        <figcaption>
+            <strong>Fone de Ouvido Headphone P47 Sem Fio Bluetooth Wireless Dobrável Com Microfone Regulável Para Corrida Academia Escritório Caminhada Linha Premium (Cores Sortidas/Preto/Preto vermelho/Preto azul) </strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="capa para intro do youtube">
+        <img src="./capa para intro do you tube.jpg" alt="capa para intro do youtube">
+        <figcaption>
+            <strong>capa para intro do youtube</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="post">
+        <img src="./post para instagram.jpg" alt="post">
+        <figcaption>
+            <strong>post para instagram</strong>
+        </figcaption>
+    </figure>
+
+
+    <figure data-name="garrafa">
+        <img src="./garrafa prata bolinha 500 ml.png" alt="garrafa">
+        <figcaption>
+            <strong>Squeeze Personalizado</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="capa">
+        <img src="./capa para mala.jpg" alt="capa">
+        <figcaption>
+            <strong>Capa Protetora de Mala de Viagem - Pvc Cristal Transparente Grosso Resistente - P20 M24 G28 - Capa de Bagagem à prova D'água poeira sujeira Arranhões Diminui o Impacto (P - 20 Polegadas)</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="kit oculos">
+        <img src="./kit oculos.jpg" alt="kit oculos">
+        <figcaption>
+            <strong>Kit Óculos Rio de Janeiro Escuro/Protetor Auricular Reutilizável</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="adesivo">
+        <img src="./adesivo holografico.png" alt="adesivo">
+        <figcaption>
+            <strong>adesivo holografico</strong>
+        </figcaption>
+    </figure>
+
+
+    <figure data-name="luva de goleiro">
+        <img src="./luva de goleiro.jpg" alt="luva de goleiro">
+        <figcaption>
+            <strong>Luva de Goleiro Futebol Infantil Triatleta Esportes</strong>
+        </figcaption>
+    </figure>
+
+
+    <figure data-name="bola">
+        <img src="./bola de futebol infantil 2.jpg" alt="bola">
+        <figcaption>
+            <strong>bola de futebol l</strong>
+        </figcaption>
+    </figure>
+
+
+    <figure data-name="bola">
+        <img src="./bola de futebol infantil.jpg" alt="bola">
+        <figcaption>
+            <strong>bola de futebol</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="copos americanos">
+        <img src="./conjunto de copos americanos.jpg" alt="copos">
+        <figcaption>
+            <strong>conjunto de copos americanos</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="camiseta">
+        <img src="./camiseta dry fit masculina.png" alt="camiseta">
+        <figcaption>
+            <strong> camiseta dry fit</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="luva de goleiro">
+        <img src="./luva de goleiro adulto.jpg" alt="luva de goleiro">
+        <figcaption>
+            <strong> Luva de Goleiro Penalty Adulto Delta 1 Para Todos os Pisos Cor:Branco+Azul;Tamanho:8;Gênero:Unissex</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="molettom">
+        <img src="./molettom.png" alt="molettom">
+        <figcaption>
+            <strong>Jaqueta Corta Vento Blade</strong>
+        </figcaption>
+    </figure>
+
+
+    <figure data-name="copos de drinks">
+        <img src="./jogo de 6 copos de drinks.jpg" alt="copos de drinks">
+        <figcaption>
+            <strong>Jogo 6 Copos de Vidro Long Drink 300Ml Transparente Canelado Luxo Para Água Suco E Drinks</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="kit copos sidney">
+        <img src="./kit copos de vidro sidney.jpg" alt="kit copos sidney">
+        <figcaption>
+            <strong>Kit de Copos de Vidro Sydney 350ml – Jogo com 6 ou 12 Peças, Design Robusto e Elegante, Vidro Reforçado 4mm para Drinks, Sucos e Whisky</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="copo de papel liso">
+        <img src="./copo de papel liso.jpg" alt="como de papel liso">
+        <figcaption>
+            <strong>Copo de papel liso 300 ml biodegradavel descartável 25 unidades</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="copos de vidro">
+        <img src="./jogo de 6 copos.jpg" alt="copos de vidro">
+        <figcaption>
+            <strong>Jogo de 6 Copos de Vidro Texas 315 ml Design Quadrado Elegante e Resistente Ideal para Suco Água Refrigerante Drinks e Café Transparente para Cozinha Bar e Restaurante</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="copos twister">
+        <img src="./10 copos twister.jpg" alt="copos twister">
+        <figcaption>
+            <strong>10 Copos Twister Acrílico 400ml Cristal</strong>
+        </figcaption>
+    </figure>
+
+
+    <figure data-name="copos balao">
+        <img src="./jogo de 6 copos vidro balao.jpg" alt="copos balao">
+        <figcaption>
+            <strong>Jogo com 6 Copos de Vidro Balão 470ml Design Elegante e Resistente Ideal para Suco Água Refrigerante Drinks e Café Transparente para Cozinha Bar e Restaurante</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="copo com canudo">
+        <img src="./copo com canudo.jpg" alt="copo com canudo">
+        <figcaption>
+            <strong>Copo com Canudo Oficial 2 em 1 com Compartimento Porta Lanche Petiscos Snacks Biscoitos, Edição Youtubers e Streamers Licenciado Coleção Especial, Athos Problems Lopers 550 ml (Athos)</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="ifantil">
+        <img src="./infantil 1.jpg" alt="infantil">
+        <figcaption>
+            <strong>Buba Copo Dino Com Alça Azul</strong>
+        </figcaption>
+    </figure>
+
+    <figure data-name="infantil">
+        <img src="./infantil 2.jpg" alt="infantil">
+        <figcaption>
+            <strong>NUK Copo De Treinamento First Choice Rosa 150 Ml</strong>
+        </figcaption>
+    </figure>
+
+<figure data-name="infantil">
+        <img src="./infantil 3.jpg" alt="Infantil">
+        <figcaption>
+            <strong>Copo De Transição Philips Avent 200ml 6m+ Azul com Alças</strong>
+        </figcaption>
+    </figure>
+
+
+
+
+
+    <figure data-name="infantil">
+        <img src="./infantil 4.jpg" alt="infantil">
+        <figcaption>
+            <strong>Lillo do Brasil Copo de Aprendizado Disney 240ml - Mickey</strong>
+        </figcaption>
+    </figure>
+
+ <figure data-name="infantil">
+        <img src="./infantil 5.jpg" alt="infantil">
+        <figcaption>
+            <strong>Buba Copo 360º Com Alça Verde Buba Verde Tamanho Único</strong>
+        </figcaption>
+    </figure>
+
+<figure data-name="infantil">
+    <img src="./infantil 6.jpg" alt="infantil">
+    <figcaption>
+        <strong>Lillo do Brasil Copo de Aprendizado Disney 240ml - Minnie</strong>
+    </figcaption>
+</figure>
+    
+
+
+
+
+<figure data-name="infantil">
+    <img src="./infantil 7.jpg" alt="infantil">
+    <figcaption>
+        <strong>Copo com Canudo Bluey 500 ml Plasútil</strong>
+    </figcaption>
+</figure>
+
+
+
+
+
+
+<figure data-name="infantil">
+    <img src="./infantil 8.jpg" alt="infantil">
+    <figcaption>
+        <strong>Buba Copo Com Alca Removivel - Azul Buba Azul</strong>
+    </figcaption>
+</figure>
+
+
+
+
+
+
+
+
+<figure data-name="infantil">
+    <img src="./infantil 9.jpg" alt="infantil">
+    <figcaption>
+        <strong>Copo Bluey 320 ml Plasútil</strong>
+    </figcaption>
+</figure>
+
+
+<figure data-name="infantil">
+    <img src="./copo com alça infantil.jpg" alt="infantil">
+    <figcaption>
+        <strong>copo com alça infantil</strong>
+    </figcaption>
+</figure>
+
+
+
+
+<figure data-name="infantil">
+    <img src="./Bolsa Térmica Infantil Fitness Viagem Animais 3D Menina Menino Impermeável Escolar Marmita Com Alça (Tigre).jpg" alt="infantil">
+    <figcaption>
+        <strong>Bolsa Térmica Infantil Fitness Viagem Animais 3D Menina Menino Impermeável Escolar Marmita Com Alça (Tigre)</strong>
+    </figcaption>
+</figure>
+
+
+<figure data-name="infantil">
+    <img src="./bolsa termica.jpg" alt="infantil">
+    <figcaption>
+        <strong>Bolsa Térmica Infantil Fitness Viagem Animais 3D Menina Menino Impermeável Escolar Marmita Com Alça (Dino Amarelo)</strong>
+    </figcaption>
+</figure>
+
+<figure data-name="copos">
+    <img src="./copo com cuia 4.png" alt="copos">
+    <figcaption>
+        <strong>copo com cuia</strong>
+    </figcaption>
+</figure>
+
+
+<figure data-name="copos">
+    <img src="./copo com cuia 2.png" alt="copos">
+    <figcaption>
+        <strong>copo com cuia</strong>
+    </figcaption>
+</figure>
+
+
+<figure data-name="capa">
+    <img src="./capa 4.webp" alt="capa">
+    <figcaption>
+        <strong>capa para cama de casal</strong>
+    </figcaption>
+</figure>
+
+<figure data-name="caderno">
+    <img src="./caderno 1.jpg" alt="caderno">
+    <figcaption>
+        <strong>Caderno Universitário 10 Matérias Stiff Slim Preto Jandaia 1046429</strong>
+    </figcaption>
+</figure>
+
+<figure data-name="caderno">
+    <img src="./caderno 2.jpg" alt="caderno">
+    <figcaption>
+        <strong>Tilibra - Caderno Espiral Capa Dura Universitário Connect 1 Matéria Love Pink 80 Folhas - Ops Love Pink Fundo Rosa Liso</strong>
+    </figcaption>
+</figure>
+<figure data-name="caderno">
+    <img src="./caderno 3.jpg" alt="caderno">
+    <figcaption>
+        <strong>Caderneta de Anotações Grande Preto 14x21cm 80 Folhas Com Pauta Capa Emborrachada Caderno A5 Tipo Moleskine Bloco de notas Pautadas (rosa)</strong>
+    </figcaption>
+</figure>
+
+<figure data-name="caderno">
+    <img src="./caderno 4.jpg" alt="caderno">
+    <figcaption>
+        <strong>Tilibra - Tilibra ZIP - Caderno Espiral Capa Dura, 200x275mm, 80 Folhas, Negro</strong>
+    </figcaption>
+</figure>
+
+
+<figure data-name="caderno">
+    <img src="./caderno 5.jpg" alt="caderno">
+    <figcaption>
+        <strong>Jandaia - Caderno Espiral Univ CD 1 matéria 80Fls Stilo Azul</strong>
+    </figcaption>
+</figure>
+
+
+<figure data-name="bola">
+    <img src="./bola.jpg" alt="bola">
+    <figcaption>
+        <strong>Bola de Futvolei Penta Preta ft5 Altinha Profissional</strong>
+    </figcaption>
+</figure>
+
+<figure data-name="bola">
+    <img src="./bola de futebol.jpg" alt="bola">
+    <figcaption>
+        <strong>Bola De Futebol Infantil Capotão Campo Costura Firme Nº5 Cor Sortida</strong>
+    </figcaption>
+</figure>
+
+<figure data-name="bola">
+    <img src="./kit 6 bolas tenis.jpg" alt="bola">
+    <figcaption>
+        <strong>Kit 6 Bolas Tênis de Mesa Ping Pong Laranja Premium</strong>
+    </figcaption>
+</figure>
+
+
+<figure data-name="bola">
+    <img src="./bola de futsal.jpg" alt="bola">
+    <figcaption>
+        <strong>Bola Topper Slick Campo Azul/Preto</strong>
+    </figcaption>
+</figure>
+
+
+
+<figure data-name="bola">
+    <img src="./bola futsal 2.jpg" alt="bola">
+    <figcaption>
+        <strong>Bola Slick Futsal Usee Brasil Topper</strong>
+    </figcaption>
+</figure>
+  </div>
+
+  <div class="empty" id="empty">Nenhum produto encontrado.</div>
+
+  <script>
+    const input = document.getElementById('searchInput');
+    const grid = document.getElementById('grid');
+    const figures = Array.from(grid.querySelectorAll('figure'));
+    const empty = document.getElementById('empty');
+
+    function normalize(str) {
+      return str.toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function filter() {
+      const q = normalize(input.value);
+      let visible = 0;
+      figures.forEach(fig => {
+        const name = normalize(fig.dataset.name);
+        const match = name.includes(q);
+        fig.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      empty.style.display = visible === 0 ? 'block' : 'none';
+    }
+
+    input.addEventListener('input', filter);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
